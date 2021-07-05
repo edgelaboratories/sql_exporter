@@ -63,6 +63,9 @@ You will find ready to use "standard" DBMS-specific collector definitions in the
 definitions and metric additions if you think they could be more widely useful, even if they are merely different takes
 on already covered DBMSs.
 
+The configuration can contain environment variables as `${VAR}` or `$VAR`, these will be replaced using 
+[os.ExpandEnv](https://golang.org/pkg/os/#ExpandEnv)
+
 **`./sql_exporter.yml`**
 
 ```yaml
@@ -83,7 +86,7 @@ global:
 target:
   # Data source name always has a URI schema that matches the driver name. In some cases (e.g. MySQL)
   # the schema gets dropped or replaced to match the driver expected DSN format.
-  data_source_name: 'sqlserver://prom_user:prom_password@dbserver1.example.com:1433'
+  data_source_name: 'sqlserver://prom_user:${PROM_PASSWORD}@dbserver1.example.com:1433'
 
   # Collectors (referenced by name) to execute on the target.
   collectors: [pricing_data_freshness]

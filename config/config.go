@@ -3,6 +3,7 @@ package config
 import (
 	"fmt"
 	"io/ioutil"
+	"os"
 	"path/filepath"
 	"strings"
 	"time"
@@ -20,6 +21,8 @@ func Load(configFile string) (*Config, error) {
 	if err != nil {
 		return nil, err
 	}
+
+	buf = []byte(os.ExpandEnv(string(buf)))
 
 	c := Config{configFile: configFile}
 	err = yaml.Unmarshal(buf, &c)
