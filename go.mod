@@ -3,9 +3,7 @@ module github.com/nxcc/sql_exporter
 go 1.16
 
 require (
-	github.com/ClickHouse/clickhouse-go v1.4.5 // indirect
 	github.com/denisenkom/go-mssqldb v0.0.0-20191001013358-cfbb681360f0
-	github.com/free/sql_exporter v0.0.0-20191127220300-6f96b0d6b403
 	github.com/go-sql-driver/mysql v1.4.1-0.20191114115753-b4242bab7dc5
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/golang/protobuf v1.3.3-0.20191022195553-ed6926b37a63
