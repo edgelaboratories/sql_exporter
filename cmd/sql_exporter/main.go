@@ -7,12 +7,13 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/nxcc/sql_exporter"
+	_ "net/http/pprof"
+
 	log "github.com/golang/glog"
+	"github.com/nxcc/sql_exporter"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/prometheus/common/version"
-	_ "net/http/pprof"
 )
 
 var (
