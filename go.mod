@@ -15,5 +15,5 @@ require (
 	github.com/prometheus/procfs v0.0.7 // indirect
 	golang.org/x/crypto v0.0.0-20191117063200-497ca9f6d64f // indirect
 	golang.org/x/sys v0.0.0-20191119060738-e882bf8e40c2 // indirect
-	gopkg.in/yaml.v2 v2.2.6
+	gopkg.in/yaml.v2 v2.2.8
 )
