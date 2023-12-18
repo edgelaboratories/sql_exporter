@@ -23,7 +23,7 @@ require (
 	github.com/golang-sql/sqlexp v0.0.0-20170517235910-f1bb20e5a188 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369 // indirect
 	github.com/prometheus/procfs v0.7.3 // indirect
-	golang.org/x/crypto v0.1.0 // indirect
-	golang.org/x/sys v0.1.0 // indirect
+	golang.org/x/crypto v0.17.0 // indirect
+	golang.org/x/sys v0.15.0 // indirect
 	google.golang.org/protobuf v1.26.0 // indirect
 )
