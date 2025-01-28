@@ -7,7 +7,7 @@ replace github.com/nxcc/sql_exporter => github.com/edgelaboratories/sql_exporter
 require (
 	github.com/denisenkom/go-mssqldb v0.12.0
 	github.com/go-sql-driver/mysql v1.6.0
-	github.com/golang/glog v1.0.0
+	github.com/golang/glog v1.2.4
 	github.com/golang/protobuf v1.5.2
 	github.com/lib/pq v1.10.4
 	github.com/prometheus/client_golang v1.12.1
