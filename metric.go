@@ -4,11 +4,12 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/nxcc/sql_exporter/config"
-	"github.com/nxcc/sql_exporter/errors"
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
+
+	"github.com/nxcc/sql_exporter/config"
+	"github.com/nxcc/sql_exporter/errors"
 )
 
 // MetricDesc is a descriptor for a family of metrics, sharing the same name, help, labes, type.

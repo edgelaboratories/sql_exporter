@@ -6,10 +6,11 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/nxcc/sql_exporter/config"
-	"github.com/golang/protobuf/proto"
+	"google.golang.org/protobuf/proto"
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
+	
+	"github.com/nxcc/sql_exporter/config"
 )
 
 var dsnOverride = flag.String("config.data-source-name", "", "Data source name to override the value in the configuration file with.")
