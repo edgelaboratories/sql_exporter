@@ -12,6 +12,7 @@ import (
 	log "github.com/golang/glog"
 	"github.com/nxcc/sql_exporter"
 	"github.com/prometheus/client_golang/prometheus"
+	version_collector "github.com/prometheus/client_golang/prometheus/collectors/version"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/prometheus/common/version"
 )
@@ -24,7 +25,7 @@ var (
 )
 
 func init() {
-	prometheus.MustRegister(version.NewCollector("sql_exporter"))
+	prometheus.MustRegister(version_collector.NewCollector("sql_exporter"))
 }
 
 func main() {
